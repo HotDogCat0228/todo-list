@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+</head>
+<body  class="bg-yellow pt-48">
+        <h1 class="fs-48 text-bold text-center text-custom">TODO LIST</h1>
+        <div class="container">
+            <form action="index.html" class="position-relative mb-8" id="add">
+                <input class="shadow ps-24 w-100 border-radius py-12" type="text" name="" id="content" placeholder="新增待辦事項">
+                <div class="size-40 fs-40 lh-1 d-inline-block position-absolute end-0 cursor-pointer"><i class="fa-solid fa-square-plus"></i></div>
+            </form>
+
+            <div class="bg-white border-radius shadow pt-16 pb-32">
+                <!-- 頁首分頁標籤 -->
+                <header class="header">
+                    <ul class="d-flex fs-14" id="page_label">
+                        <li class="w-33 text-center">
+                            <label class="radio-box" for="全部">
+                            <input type="radio" name="page-label" id="全部" checked>
+                            <span>全部</span>
+                            </label>
+                        </li>
+                        <li class="w-33 text-center">
+                            <label class="radio-box" for="待完成">
+                            <input type="radio" name="page-label" id="待完成">
+                            <span>待完成</span>
+                            </label>
+                        </li>
+                        <li class="w-33 text-center">
+                            <label class="radio-box" for="已完成">
+                            <input type="radio" name="page-label" id="已完成">
+                            <span>已完成</span>
+                            </label>
+                        </li>
+                    </ul>
+                </header>
+                <!-- 清單展示 -->
+                <ul class="mb-24 px-24 h-600 overflow-y" id="list">
+                    
+                </ul>
+                <!-- 頁尾 數據顯示/清除 -->
+                <footer class="footer d-flex justify-content-between fs-14 px-24">
+                    
+                </footer>
+            </div>
+        </div>
+
+<script src="https://kit.fontawesome.com/5889607084.js" crossorigin="anonymous"></script>
+<script src="./script/all.js"></script>
+</body>
+</html>
